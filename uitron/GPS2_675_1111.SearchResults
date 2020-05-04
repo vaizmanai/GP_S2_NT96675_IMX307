@@ -1,0 +1,362 @@
+---- SDIO2 Matches (368 in 138 files) ----
+IntDirCfg.c (drvext\drvext_src\modelext\a119v3):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\a119v3):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\a119v3):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\a7_n75):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\a7_n75):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\a7_n75):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\ahd_lt8918):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\ahd_lt8918):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\ahd_lt8918):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\dual_ahd):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\dual_ahd):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\dual_ahd):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\e20):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\e20):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\e20):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\evb):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\evb):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\evb):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\f7):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\f7):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\f7):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\fhd8900):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\fhd8900):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\fhd8900):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\g600):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\g600):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\g600):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\m301j):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\m301j):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\m301j):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\q09_2):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\q09_2):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\q09_2):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\r2):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\r2):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\r2):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675_64m):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675_64m):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\wh675_64m):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\x1):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\x1):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\x1):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\ynd_g15):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+IntDirCfg.c (drvext\drvext_src\modelext\ynd_g15):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+IntDirCfg.c (drvext\drvext_src\modelext\ynd_g15):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\e20\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\e20\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\e20\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\e20\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\e20\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\evb\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\evb\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\evb\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\evb\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\evb\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\f7\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\f7\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\f7\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\f7\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\f7\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\g600\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\g600\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\g600\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\g600\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\g600\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\m301j\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\m301j\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\m301j\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\m301j\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\m301j\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\r2\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\r2\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\r2\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\r2\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\r2\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\x1\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\x1\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\x1\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\x1\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\x1\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	.int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = TRUE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	.int_id_dst[CC_CORE_MIPS2].Bit.bInt_ID_SDIO2    = FALSE,
+Intdir_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	.int_id_dst[CC_CORE_DSP].Bit.bInt_ID_SDIO2      = FALSE,
+Interrupt.h (include\drv\driver_sys):	INT_ID_SDIO2,
+Interrupt.h (include\drv\driver_sys):		UINT32  bInt_ID_SDIO2: 1;
+IOCfg.h (drvext\drvext_src\modelext\a119v3):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\a119v3):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\a7_n75):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\a7_n75):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\ahd_lt8918):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\ahd_lt8918):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\dual_ahd):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\dual_ahd):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\e20):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\e20):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\evb):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\evb):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\f7):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\f7):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\fhd8900):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\fhd8900):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\g600):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\g600):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\m301j):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\m301j):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\q09_2):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\q09_2):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\r2):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\r2):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\wh675):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\wh675):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\wh675_64m):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\wh675_64m):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\x1):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\x1):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+IOCfg.h (drvext\drvext_src\modelext\ynd_g15):extern BOOL     SDIO2CardUser_CheckCardInserted(void);
+IOCfg.h (drvext\drvext_src\modelext\ynd_g15):extern BOOL     SDIO2CardUser_CheckCardWP(void);
+MakeConfig.txt (project\demokit):	-D_$(NVT_SDIO2_PAD_POWER)_\
+ModelConfig_A119V3.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_A119V3.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_A119V3.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_A119V3.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_A7_N75.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_A7_N75.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_A7_N75.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_A7_N75.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_AHD_LT8918.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_AHD_LT8918.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_AHD_LT8918.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_AHD_LT8918.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DUAL_AHD.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_DUAL_AHD.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_DUAL_AHD.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DUAL_AHD.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM1_EVB.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_DVCAM1_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_DVCAM1_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM1_EVB.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM2_EVB.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_DVCAM2_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_DVCAM2_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM2_EVB.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM_64M_EVB.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_DVCAM_64M_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_DVCAM_64M_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_DVCAM_64M_EVB.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_E20.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_E20.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_E20.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_E20.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_EMMC_EVB.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_EMMC_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_EMMC_EVB.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_EMMC_EVB.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_F7.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_F7.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_F7.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_F7.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_FHD8900.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_FHD8900.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_FHD8900.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_FHD8900.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_G600.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_G600.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_G600.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_G600.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_M301J.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_M301J.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_M301J.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_M301J.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_Q09_2.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_Q09_2.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_Q09_2.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_Q09_2.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_R2.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_R2.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_R2.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_R2.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_WH675.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_WH675.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_WH675.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_WH675.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_WH675_64M.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_WH675_64M.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_WH675_64M.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_WH675_64M.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_X1.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_X1.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_X1.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_X1.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+ModelConfig_YND_G15.txt (project\demokit):# [NVT_SDIO2_PAD_POWER]
+ModelConfig_YND_G15.txt (project\demokit):# NVT_SDIO2_PAD_POWER_1800
+ModelConfig_YND_G15.txt (project\demokit):# NVT_SDIO2_PAD_POWER_3300
+ModelConfig_YND_G15.txt (project\demokit):NVT_SDIO2_PAD_POWER = NVT_SDIO2_PAD_POWER_3300
+PinmuxCfg.c (drvext\drvext_src\modelext\a119v3):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\a7_n75):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\ahd_lt8918):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\dual_ahd):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\e20):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\evb):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\f7):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\fhd8900):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\g600):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\m301j):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\q09_2):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\r2):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\wh675):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\wh675_64m):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\x1):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+PinmuxCfg.c (drvext\drvext_src\modelext\ynd_g15):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\a119v3\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\a7_n75\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\ahd_lt8918\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\dual_ahd\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\e20\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\evb\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\f7\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\fhd8900\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\g600\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\m301j\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\q09_2\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\r2\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\wh675\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\wh675_64m\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\x1\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Pinmux_cfg.c (drvext\drvext_src\modelext\ynd_g15\independant):	{PIN_FUNC_SDIO2,            PIN_SDIO_CFG_4BITS},
+Plf_intr.h (thirdparty\ecos\include\cyg\hal):#define CYGNUM_HAL_INTR_SDIO2                   32
+Pll.h (include\drv\driver_sys):	SDIO2_CLK,          ///< SDIO2 clock
+Pll.h (include\drv\driver_sys):	SDIO2_GCLK,         ///< Gating SDIO2 clock
+PrjCfg_A119V3.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_A7_N75.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_AHD_LT8918.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_CarDV_TP2852.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_DUAL_AHD.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_DVCam.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_DVCam_64M.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_E20.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_F7.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_FHD8900.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_FPGA.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_G600.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_HUNTING.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_IPCam.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_J511S.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_JXW518.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_M301J.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_P2PCam.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_PW672.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_Q09_2.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_R2.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_WH675.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_WH675_64M.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_WH850_672.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_WH950_672.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_X1.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+PrjCfg_YND_G15.h (project\demokit\srccode):// 1. set .int_id_dst[CC_CORE_MIPS1].Bit.bInt_ID_SDIO2 to TRUE
+Sdio.h (include\drv\driver_sys):    @note for sdio_setDetectCardExistHdl(), sdio2_setDetectCardExistHdl(), sdio_setDetectCardProtectHdl(), sdio2_setDetectCardProtectHdl()
+Sdio.h (include\drv\driver_sys):    @note for sdio_setCardIOHdl(), sdio2_setCardIOHdl()
+Sdio.h (include\drv\driver_sys):    @note for sdio_setHSClk() and sdio2_setHSClk()
+Sdio.h (include\drv\driver_sys):    (for sdio_sendIOCMD52(), sdio2_sendIOCMD52(), sdio_sendIOCMD53(), sdio2_sendIOCMD53() )
+Sdio.h (include\drv\driver_sys):    (for sdio_sendIOCMD52(), sdio2_sendIOCMD52() )
+Sdio.h (include\drv\driver_sys):    (for sdio_sendIOCMD53(), sdio2_sendIOCMD53() )
+Sdio.h (include\drv\driver_sys):    (for sdio_sendIOCMD53(), sdio2_sendIOCMD53() )
+Sdio.h (include\drv\driver_sys):    (for sdio_sendIOCMD52(), sdio2_sendIOCMD52() )
+Sdio.h (include\drv\driver_sys):    @note for sdio_sendIOCMD52(), sdio2_sendIOCMD52()
+Sdio.h (include\drv\driver_sys):    @note for sdio_sendIOCMD53(), sdio2_sendIOCMD53()
+Sdio.h (include\drv\driver_sys):    @note for sdio_getMiscInfo(), sdio2_getMiscInfo().
+Sdio.h (include\drv\driver_sys):// Functions exported from SDIO2
+Sdio.h (include\drv\driver_sys):extern void                 sdio2_init(void);
+Sdio.h (include\drv\driver_sys):extern ER                   sdio2_open(void);
+Sdio.h (include\drv\driver_sys):extern ER                   sdio2_close(void);
+Sdio.h (include\drv\driver_sys):extern BOOL                 sdio2_isOpened(void);
+Sdio.h (include\drv\driver_sys):extern ER                   sdio2_lock(void);
+Sdio.h (include\drv\driver_sys):extern ER                   sdio2_unlock(void);
+Sdio.h (include\drv\driver_sys):#define sdio2_setDetectCardExistHdl(pHdl)   sdio2_setCallBack(SDIO_CALLBACK_CARD_DETECT, (SDIO_CALLBACK_HDL)pHdl)
+Sdio.h (include\drv\driver_sys):#define sdio2_setDetectCardProtectHdl(pHdl) sdio2_setCallBack(SDIO_CALLBACK_WRITE_PROTECT, (SDIO_CALLBACK_HDL)pHdl)
+Sdio.h (include\drv\driver_sys):#define sdio2_setCardIOHdl(pHdl)            sdio2_setCallBack(SDIO_CALLBACK_IO_PAD, (SDIO_CALLBACK_HDL)pHdl)
+Sdio.h (include\drv\driver_sys):#define sdio2_setCardPowerHdl(pHdl)         sdio2_setCallBack(SDIO_CALLBACK_POWER_CONTROL, (SDIO_CALLBACK_HDL)pHdl)
+Sdio.h (include\drv\driver_sys):// Functions exported from SDIO2
+Sdio.h (include\drv\driver_sys):extern PSTORAGE_OBJ             sdio2_getStorageObject(STRG_OBJ_ID objID);
+Sdio.h (include\drv\driver_sys):extern PSTRG_TAB                sdio2_getStorageObject(void);
+Sdio.h (include\drv\driver_sys):extern UINT32                   sdio2_getCardExist(void);
+Sdio.h (include\drv\driver_sys):extern UINT32                   sdio2_getCardWriteProt(void);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2_setConfig(SDIO_CONFIG_ID configID, UINT32 configContext);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2_setInfo(UINT32 *pInfo);
+Sdio.h (include\drv\driver_sys):extern void                     sdio2_printCardInformation(void);
+Sdio.h (include\drv\driver_sys):extern PSDMMC_INFO_STRUCT       sdio2_getCardInformation(void);
+Sdio.h (include\drv\driver_sys):extern PSDIO_MISC_INFORMATION   sdio2_getMiscInfo(void);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2_setCallBack(SDIO_CALLBACK callBackID, SDIO_CALLBACK_HDL pCallBack);
+Sdio.h (include\drv\driver_sys):extern void                     sdio2_setIOEnable(BOOL IOEn);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2_sendIOCMD52(PSDIO_CMD52_STRUCT pSDIO_CMD52);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2_sendIOCMD53(PSDIO_CMD53_STRUCT pSDIO_CMD53);
+Sdio.h (include\drv\driver_sys)://extern PMMC_EXT_CSD_STRUCT      sdio2_getExtCSD(void);
+Sdio.h (include\drv\driver_sys):extern ER                       sdio2strg_eraseSectors(UINT32 id, UINT32 ulLBAddr, UINT32 ulSctCnt);
+Sdio_dev.h (thirdparty\devs_ecos-sdio\include\cyg\io):#define SDIODEV_SRC_CLK_40MHZ      2   ///< Source clock 40Mhz, only for SDIO2
+Sdio_dev.h (thirdparty\devs_ecos-sdio\include\cyg\io):#define SDIODEV_SRC_CLK_48MHZ      3   ///< Source clock 48Mhz, SDIO/SDIO2 support
+Sdio_dev.h (thirdparty\devs_ecos-sdio\include\cyg\io):#define SDIODEV_SRC_CLK_PLL4      12   ///< Source clock PLL4, SDIO/SDIO2 support
+Sdio_dev.h (thirdparty\devs_ecos-sdio\include\cyg\io):                                            ///< - @b SDIODEV_SRC_CLK_40MHZ (only SDIO2 support)
+StrgDef.h (include\drv\driver_sys):	STRG_TYPE_SDIO2,                    ///< SDIO2 device
+SysCfg.c (project\demokit\srccode\kernel):UINT32 POOL_ID_STORAGE_SDIO2 = 0;
+SysCfg.c (project\demokit\srccode\kernel):	OS_CONFIG_MEMPOOL(POOL_ID_STORAGE_SDIO2, POOL_SIZE_STORAGE_SDIO,    POOL_CNT_STORAGE_SDIO);      // sdio2 driver working buffer
+SysCfg.h (project\demokit\srccode\kernel):extern UINT32 POOL_ID_STORAGE_SDIO2;
+SysStrg_Exe.c (project\demokit\srccode\system):DXSTRG_INIT UserSdio2Init;
+SysStrg_Exe.c (project\demokit\srccode\system):	UserSdio2Init.buf.Addr = OS_GetMempoolAddr(POOL_ID_STORAGE_SDIO2);
+SysStrg_Exe.c (project\demokit\srccode\system):	UserSdio2Init.buf.Size = OS_GetMempoolSize(POOL_ID_STORAGE_SDIO2);
+SysStrg_Exe.c (project\demokit\srccode\system):	Dx_Init(DxCardDev2, &UserSdio2Init, 0, STORAGE_VER);
+Top.h (include\drv\driver_sys):	PINMUX_DEBUGPORT_SDIO2 =        0x0016,     ///< SDIO2
+Top.h (include\drv\driver_sys):	PIN_FUNC_SDIO2,     ///< SDIO2. Configuration refers to PIN_SDIO_CFG.
+Top.h (include\drv\driver_sys):    @note For pinmux_init() with PIN_FUNC_SDIO or PIN_FUNC_SDIO2 or PIN_FUNC_SDIO3.\n
+Top.h (include\drv\driver_sys):                                     ///< For SDIO2: enable SDIO2_CLK/SDIO2_CMD/SDIO2_D[0..3] on MC[18..23] (C_GPIO[18..23])
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//pSrcObj = (HNVT_STRG)sdio2_getStorageObject(STRG_OBJ_FAT1);
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//sdio2_setDetectCardExistHdl(LibFs_CheckCardInserted);
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//sdio2_setDetectCardProtectHdl(SLibFs_CheckCardWP);
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//pDstObj = (HNVT_STRG)sdio2_getStorageObject(STRG_OBJ_FAT1);
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//sdio2_setDetectCardExistHdl(LibFs_CheckCardInserted);
+UIBackgroundObj.c (project\demokit\srccode\uiapp\background):		//sdio2_setDetectCardProtectHdl(SLibFs_CheckCardWP);

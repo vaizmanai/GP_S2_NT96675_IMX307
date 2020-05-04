@@ -1,0 +1,6 @@
+*.o
+*.su
+*.cmd
+*.bin
+*.lds
+*.dis

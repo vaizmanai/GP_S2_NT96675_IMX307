@@ -1,0 +1,11 @@
+---- D_GPIO_0 Matches (10 in 3 files) ----
+Gw_ventana.c (board\gateworks\gw_ventana):	IOMUX_PADS(PAD_GPIO_0__GPIO1_IO00 | MUX_PAD_CTRL(NO_PAD_CTRL)),
+Iocfg_int.h (board\novatek\nvt-na51023\drv):	PAD_PIN_DGPIO0      =    (PAD_D_GPIO_BASE + 0) ,     ///< D_GPIO_0
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__CCM_CLKO			= IOMUX_PAD(0x6A4, 0x314, 0, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__GPIO1_0			= IOMUX_PAD(0x6A4, 0x314, 1, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__KPP_COL_5			= IOMUX_PAD(0x6A4, 0x314, 2, 0x840, 3, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__CCM_SSI_EXT1_CLK		= IOMUX_PAD(0x6A4, 0x314, 3, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__EPIT1_EPITO			= IOMUX_PAD(0x6A4, 0x314, 4, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__SRTC_ALARM_DEB			= IOMUX_PAD(0x6A4, 0x314, 5, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__USBOH3_USBH1_PWR		= IOMUX_PAD(0x6A4, 0x314, 6, __NA_, 0, NO_PAD_CTRL),
+Iomux-mx53.h (arch\arm\include\asm\arch-mx5):	MX53_PAD_GPIO_0__CSU_TD				= IOMUX_PAD(0x6A4, 0x314, 7, __NA_, 0, NO_PAD_CTRL),

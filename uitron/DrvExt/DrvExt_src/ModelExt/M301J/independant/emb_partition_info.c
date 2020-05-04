@@ -1,0 +1,58 @@
+#include "Type.h"
+#include "modelext_info.h"
+#include "emb_partition_info.h"
+
+#define BLK_UNIT(x) ((((x)%_EMBMEM_BLK_SIZE_)==0)?((x)/_EMBMEM_BLK_SIZE_):1/0) //block alignment
+//#define BLK_UNIT(x) ((((x)%_EMBMEM_BLK_SIZE_)==0)?(x):1/0) //byte alignment
+
+// M301J use 8MB SPI NOR flash, partition size should be aligned to block size 0x10000
+// no DSP, no CPU2
+EMB_PARTITION ind_emb_partition_info_data[EMB_PARTITION_INFO_COUNT] __attribute__((section("modelext_data.emb_partition_info"))) = {
+#if defined(_EMBMEM_SPI_NOR_)
+	#if 1 // for 8MB flash reference
+	[0] = {EMBTYPE_LOADER,   0, BLK_UNIT(0x00000000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+	[1] = {EMBTYPE_MODELEXT, 0, BLK_UNIT(0x00010000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+	[2] = {EMBTYPE_UITRON,   0, BLK_UNIT(0x00020000), BLK_UNIT(0x00300000), BLK_UNIT(0x00000000)},
+	[3] = {EMBTYPE_UBOOT,    0, BLK_UNIT(0x00320000), BLK_UNIT(0x00050000), BLK_UNIT(0x00000000)},
+	[4] = {EMBTYPE_PSTORE,   0, BLK_UNIT(0x00370000), BLK_UNIT(0x000C0000), BLK_UNIT(0x00000000)},
+	[5] = {EMBTYPE_DSP, 	 0, BLK_UNIT(0x00430000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+	//[6] = {EMBTYPE_ECOS,	 0, BLK_UNIT(0x00430000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+	[7] = {EMBTYPE_USER0,	 0, BLK_UNIT(0x00430000), BLK_UNIT(0x003D0000), BLK_UNIT(0x00000000)}, //wav data?
+	#else // for 4MB flash reference
+	[0] = {EMBTYPE_LOADER,	 0, BLK_UNIT(0x00000000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+	[1] = {EMBTYPE_MODELEXT, 0, BLK_UNIT(0x00010000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+	[2] = {EMBTYPE_UITRON,	 0, BLK_UNIT(0x00020000), BLK_UNIT(0x002A0000), BLK_UNIT(0x00000000)},
+	[3] = {EMBTYPE_UBOOT,	 0, BLK_UNIT(0x002C0000), BLK_UNIT(0x00050000), BLK_UNIT(0x00000000)},
+	[4] = {EMBTYPE_PSTORE,	 0, BLK_UNIT(0x00310000), BLK_UNIT(0x00050000), BLK_UNIT(0x00000000)},
+	[5] = {EMBTYPE_DSP, 	 0, BLK_UNIT(0x00360000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+	//[6] = {EMBTYPE_ECOS,	 0, BLK_UNIT(0x00360000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+	[7] = {EMBTYPE_USER0,	 0, BLK_UNIT(0x00360000), BLK_UNIT(0x000A0000), BLK_UNIT(0x00000000)}, //wav data?
+	#endif
+#else
+	// SPI NAND case, added for compiling issue, since block size of NAND is 0x20000,
+	// the partition size of SPI NAND should be multiple of 0x20000
+	[0] = {EMBTYPE_LOADER,  0,  BLK_UNIT(0x00000000), BLK_UNIT(0x00040000), BLK_UNIT(0x00000000)},
+	[1] = {EMBTYPE_MODELEXT, 0, BLK_UNIT(0x00040000), BLK_UNIT(0x00040000), BLK_UNIT(0x00000000)},
+	[2] = {EMBTYPE_UITRON,  0,  BLK_UNIT(0x00080000), BLK_UNIT(0x00A80000), BLK_UNIT(0x00000000)},
+	[3] = {EMBTYPE_UBOOT,   0,  BLK_UNIT(0x00B00000), BLK_UNIT(0x00200000), BLK_UNIT(0x00000000)},
+	[4] = {EMBTYPE_PSTORE,  0,  BLK_UNIT(0x06940000), BLK_UNIT(0x00200000), BLK_UNIT(0x00100000)},
+	#if defined(_DSP1_NONE_)
+	[5] = {EMBTYPE_DSP,     0,  BLK_UNIT(0x06B40000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+	#if defined(_CPU2_ECOS_)
+	[6] = {EMBTYPE_ECOS,    0,  BLK_UNIT(0x06B40000), BLK_UNIT(0x00200000), BLK_UNIT(0x00000000)},
+	#endif
+	#else
+	[5] = {EMBTYPE_DSP,     0,  BLK_UNIT(0x06B40000), BLK_UNIT(0x00400000), BLK_UNIT(0x00000000)},
+	#if defined(_CPU2_ECOS_)
+	[6] = {EMBTYPE_ECOS,    0,  BLK_UNIT(0x06F40000), BLK_UNIT(0x00200000), BLK_UNIT(0x00000000)},
+	#endif
+	#endif
+#endif
+};
+
+MODELEXT_HEADER ind_emb_partition_info_header __attribute__((section("modelext_header.emb_partition_info"))) = {
+	.size = sizeof(ind_emb_partition_info_data) + sizeof(MODELEXT_HEADER),
+	.type = MODELEXT_TYPE_EMB_PARTITION,
+	.number = sizeof(ind_emb_partition_info_data) / sizeof(EMB_PARTITION),
+	.version = EMB_PARTITION_INFO_VER,
+};

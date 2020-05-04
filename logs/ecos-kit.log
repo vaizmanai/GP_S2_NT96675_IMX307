@@ -1,0 +1,51 @@
+make[1]: 正在进入目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/MakeCommon'
+make[2]: 正在进入目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/Project/eCosKit'
+
+Checking eCos - eCosKit release target ...
+make[3]: 正在进入目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/Project/eCosKit'
+Assembling CodeInfo.s
+Compiling BinInfo.c
+Compiling ecos_main.c
+Compiling KerExcept.c
+Compiling cmd_usage.c
+Compiling init_cmd.c
+Compiling init_ipc.c
+Compiling cmd_misc.c
+Compiling test_main.c
+Compiling test_ecos.c
+Compiling test_nvtipc.c
+Compiling test_fsipc.c
+make lds extern string ...
+Linking ...
+Creating image eCosKit_Data/Release/eCosKit.axf ...
+Creating executable eCosKit_Data/Release/ecos-kit.bin ...
+Encrypt binary file eCosKit_Data/Release/ecos-kit.bin ...
+Reading 'eCosKit_Data/Release/ecos-kit.bin'...
+File size = 422080
+
+==Display binary file info== Begin
+Model Name: ecos-kit
+VersionNumber: 10000000
+ReleaseDate: 20100701
+==Display binary file info== End
+
+Total binary size after padding: 422080
+
+##ui32BinDataSumValue: 0xF37DF387
+CheckSum: 0x0C79
+
+Writing 'eCosKit_Data/Release/ecos-kit.bin'...
+Write size = 422080
+Save binary OK.
+bfc.exe: 2018-04-5
+full load version
+compress eCosKit_Data/Release/ecos-kit.bin to tmp...
+Input file: 422080 bytes
+Compressed data: 175366 bytes (41.5%)
+Alignment on, padding to 4 bytes!
+Full compress, new file size = outsize + 16bytes = 175384
+Calculate and write back checksum...
+Checksum = 0x934b
+make[3]:正在离开目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/Project/eCosKit'
+make[2]:正在离开目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/Project/eCosKit'
+make[1]:正在离开目录 `/home/youxiaofeng/GP_S2_x/NVT_NA51023_BSP/NA51023_BSP/ecos-kit/MakeCommon'
