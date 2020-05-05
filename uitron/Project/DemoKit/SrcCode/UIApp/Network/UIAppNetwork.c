@@ -1437,7 +1437,7 @@ INT32 UINet_WifiInit(UINT32 mode, UINT32 security)
 	//Wifi_HAL_Set_Country("zh-tw");
 
 #if 1 //Only 1 connection is allowed
-	//WiFiIpc_RunSystemCmd(NULL_FILE, "iwpriv", "wlan0", "set_mib", "stanum=1", NULL_STR);
+	WiFiIpc_RunSystemCmd(NULL_FILE, "iwpriv", "wlan0", "set_mib", "stanum=1", NULL_STR);
 
 	WiFiIpc_RunSystemCmd(NULL_FILE, "iwpriv", "wlan0", "set_mib", "sdio_power_cycle=1 ", NULL_STR);
 	WiFiIpc_Config(pwifi);
