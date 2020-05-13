@@ -1201,6 +1201,16 @@ void UI_DetMCUCMD(void)
 			case Receive_AT_PWROFF:
 				debug_msg("Receive_AT_PWROFF\r\n");
 				uart2_putString(Return_AT_POWOFF_OK);
+				if (UI_GetData(FL_WIFI_LINK) == WIFI_LINK_OK)
+				{
+					if(CurrentRateBeforWIFI_onFlag == TRUE)
+					{
+						CurrentRateBeforWIFI_onFlag = FALSE;
+				     		Ux_SendEvent(&CustomMovieObjCtrl, NVTEVT_EXE_MOVIE_RATE_SET, 1, MOVIE_RATE_HIGH);
+				     	}
+				      Delay_DelayMs(100);
+				}
+				
 				if(MCUSendPoweroff == FALSE)
 				{
 					MCUSendPoweroff = TRUE;

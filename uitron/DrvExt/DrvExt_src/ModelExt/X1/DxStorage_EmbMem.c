@@ -62,6 +62,100 @@ UINT32 DrvEmbMemState(UINT32 StateID, UINT32 Value); // General Properties
 UINT32 DrvEmbMemControl(UINT32 CtrlID, UINT32 Param1, UINT32 Param2);  // General Methods
 UINT32 DrvEmbMemCommand(CHAR *pcCmdStr); //General Command Console
 
+//User define SPI-NOR table sample code
+
+static SPI_FLASH_INFO user_define_spi_flash_support_tbl[] = {
+    // XTX PN25F32B (4MB)
+	{
+        //1st ID : id[0]                2nd ID : id[1]              3rd ID : id[2]
+        //manufacture ID                memory type                 memory capacity
+		0x0B,                           0x40,                       0x16,
+        //total size (unit: byte)	    sector size (unit: byte)    block size (unit: byte)
+		0x400000,                      	0x10000,                    0x10000,
+
+        //sectr count (unit: sector)    support EWSR command        support AAI command             support SECTOR_ERASE command (0x20)
+        0x800000 / 0x10000,            	FALSE,                      FALSE,                          TRUE,
+
+        //CHIP erase time (unit: ms)    Block erase time (unit: ms) Sector erase time (unit: ms)    page program time (unit: ms)
+		200000,                         4000,                       1600,                            5,
+
+        //Wide bus (dual/quad) supported by this flash
+		SPI_FLASH_BUSWIDTH_DUAL | SPI_FLASH_BUSWIDTH_QUAD_TYPE4
+	},
+
+    // XTX PN25F64B (8MB)
+	{
+        //1st ID : id[0]                2nd ID : id[1]              3rd ID : id[2]
+        //manufacture ID                memory type                 memory capacity
+		0x0B,                           0x40,                       0x17,
+		//total size (unit: byte)	    sector size (unit: byte)    block size (unit: byte)
+		0x800000,                      	0x10000,                    0x10000,
+
+        //sectr count (unit: sector)    support EWSR command        support AAI command support     SECTOR_ERASE command (0x20)
+        0x800000 / 0x10000,            	FALSE,                      FALSE,                          TRUE,
+
+        //CHIP erase time (unit: ms)    Block erase time (unit: ms) Sector erase time (unit: ms)    page program time (unit: ms)
+		200000,                         4000,                       1600,                           5,
+		SPI_FLASH_BUSWIDTH_DUAL | SPI_FLASH_BUSWIDTH_QUAD_TYPE4
+	},
+	//GD25Q32
+	{
+                     0xC8,   0x40,   0x16,
+                     0x400000,           0x1000, 0x8000, 0x400000 / 0x1000,    FALSE,   FALSE, TRUE,
+                     30000,              1600,   300,    3,
+                     SPI_FLASH_BUSWIDTH_DUAL | SPI_FLASH_BUSWIDTH_QUAD_TYPE2 | SPI_FLASH_BUSWIDTH_QUAD_TYPE1_CMD31
+        },
+
+	/* {
+                     0xEF,   0x40,   0x16,
+                     0x400000,           0x1000, 0x1000, 0x400000 / 0x1000,    FALSE,   FALSE, TRUE,
+                     80000,              1500,   200,    3,
+                     SPI_FLASH_BUSWIDTH_DUAL | SPI_FLASH_BUSWIDTH_QUAD_TYPE2
+           },
+*/
+  /*	{
+             0xEF,   0x40,   0x16,
+             0x400000,           0x1000, 0x1000, 0x400000 / 0x1000,    FALSE,   FALSE, TRUE,
+             80000,              4000,   1600,    5,
+             SPI_FLASH_BUSWIDTH_DUAL | SPI_FLASH_BUSWIDTH_QUAD_TYPE2
+       },
+*/
+};
+
+
+static BOOL pmc_identifySpi(UINT32 uiMfgID, UINT32 uiTypeID, UINT32 uiCapacity, PSPIFLASH_IDENTIFY pIdentify)
+{
+    UINT32  uiNorTblID;
+    BOOL    user_table_found = FALSE;
+
+    for (uiNorTblID = 0; uiNorTblID < (sizeof(user_define_spi_flash_support_tbl) / sizeof(SPI_FLASH_INFO)); uiNorTblID++) {
+		if (uiMfgID == user_define_spi_flash_support_tbl[uiNorTblID].uiMfgID && \
+			uiTypeID == user_define_spi_flash_support_tbl[uiNorTblID].uiMemType && \
+			uiCapacity == user_define_spi_flash_support_tbl[uiNorTblID].uiMemCapacity) {
+            DBG_DUMP("emu user define spi-nor tbl Maker ID found @[%02d][0x%02x] DeviceID[0x%02x] cap[0x%02x]\r\n", uiNorTblID, user_define_spi_flash_support_tbl[uiNorTblID].uiMfgID, user_define_spi_flash_support_tbl[uiNorTblID].uiMemType, user_define_spi_flash_support_tbl[uiNorTblID].uiMemCapacity);
+			// For SPI Nor flash only
+            pIdentify->uiTotalSize      = user_define_spi_flash_support_tbl[uiNorTblID].uiTotalSize;
+            pIdentify->uiBlockSize      = user_define_spi_flash_support_tbl[uiNorTblID].uiBlockSize;
+			pIdentify->uiSectorSize     = user_define_spi_flash_support_tbl[uiNorTblID].uiSectorSize;
+
+			pIdentify->uiSectorCnt      = user_define_spi_flash_support_tbl[uiNorTblID].uiSectorCnt;
+			pIdentify->bSupportEWSR     = user_define_spi_flash_support_tbl[uiNorTblID].bSupportEWSR;
+			pIdentify->bSupportAAI      = user_define_spi_flash_support_tbl[uiNorTblID].bSupportAAI;
+			pIdentify->bSupportSecErase = user_define_spi_flash_support_tbl[uiNorTblID].bSupportSecErase;
+			pIdentify->uiChipEraseTime  = user_define_spi_flash_support_tbl[uiNorTblID].uiChipEraseTime;
+			pIdentify->uiBlockEraseTime = user_define_spi_flash_support_tbl[uiNorTblID].uiBlockEraseTime;
+			pIdentify->uiSectorEraseTime= user_define_spi_flash_support_tbl[uiNorTblID].uiSectorEraseTime;
+			pIdentify->uiPageProgramTime= user_define_spi_flash_support_tbl[uiNorTblID].uiPageProgramTime;
+
+			pIdentify->flashWidth       = user_define_spi_flash_support_tbl[uiNorTblID].flashWidth;
+			user_table_found            = TRUE;
+            break;
+		}
+    }
+    return user_table_found;
+}
+
+
 //dx object
 DX_OBJECT gDevEmbMem0 = {
 	DXFLAG_SIGN,
@@ -349,6 +443,8 @@ UINT32 DrvEmbMemInit(void *pInitParam) // Set Init Parameters
 #elif defined(_EMBMEM_SPI_NOR_)
 	static BOOL bSpiNandInitOnce = FALSE;
 	if (!bSpiNandInitOnce) {
+        //nand_setConfig(NAND_CONFIG_ID_FREQ, 96000000);
+        nand_setConfig(NAND_CONFIG_ID_FREQ, 80000000);
 		nand_setConfig(NAND_CONFIG_ID_NAND_TYPE, NANDCTRL_SPI_NOR_TYPE);
 		bSpiNandInitOnce = TRUE;
 	}
@@ -366,9 +462,97 @@ UINT32 DrvEmbMemInit(void *pInitParam) // Set Init Parameters
 		}
 
 		pStrg->Lock();
+		#if 0//xintianxia_spi_cid 
+		if (p->uiDxClassType == (DX_CLASS_STORAGE_EXT | DX_TYPE_EMBMEM2))
+			{
+                        UINT32 index=0;
+			   INT32 ret;
+			   char spi_date[24]={0},*SPI_CID_DATE;
 
+                        UINT8 uiRecvBuf[72];
+                        STRG_SPIFLASH_REG_DATA_PARAM reg_data;
+                        reg_data.cmd_address=0x0;
+                        reg_data.data_buffer=uiRecvBuf;
+                        reg_data.data_length=72;
+                        pStrg->ExtIOCtrl(STRG_EXT_CMD_SPI_REGISTER_DATA, 0x48, (UINT32)&reg_data);
+                        for (index=0;index<72;index++)
+                        {
+                            //DBG_DUMP("uiRecvBuf[%d]=0x%x\n\r",index,uiRecvBuf[index]);
+				 if(index<24)
+		                {
+		                    spi_date[index]=uiRecvBuf[index];
+		                    debug_msg("spi_date[%d] =%c\r\n",index,spi_date[index]);
+		                }
+                        }
+				SPI_CID_DATE=spi_date;
+			ret = strncmp(SPI_CID_DATE, "Luckychip", 9);
+		            if(ret !=0)
+		            {
+				debug_msg("!!!!!!!spi  rtc_poweroffPWR!!!!!!!\n\r");
+				Delay_DelayMs(500);
+				debug_msg("!!!!!!!spi  rtc_poweroffPWR!!!!!!!\n\r");
+				Delay_DelayMs(500);
+		              while(1)
+					  	;
+		            }
+                        DBG_DUMP("\r\n");
+			}
+		#endif
 
+//	[0] = {EMBTYPE_LOADER,	0,	BLK_UNIT(0x00000000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+//	[1] = {EMBTYPE_MODELEXT, 0, BLK_UNIT(0x00010000), BLK_UNIT(0x00010000), BLK_UNIT(0x00000000)},
+//	[2] = {EMBTYPE_UITRON,	0,	BLK_UNIT(0x00020000), BLK_UNIT(0x00300000), BLK_UNIT(0x00000000)},
+//	[3] = {EMBTYPE_UBOOT,	0,	BLK_UNIT(0x00320000), BLK_UNIT(0x00040000), BLK_UNIT(0x00000000)},
+//	[4] = {EMBTYPE_PSTORE,	0,	BLK_UNIT(0x00360000), BLK_UNIT(0x00070000), BLK_UNIT(0x00000000)},
+//	[5] = {EMBTYPE_DSP, 	0,	BLK_UNIT(0x003D0000), BLK_UNIT(0x00000000), BLK_UNIT(0x00000000)},
+//	[6] = {EMBTYPE_ECOS,	0,	BLK_UNIT(0x003D0000), BLK_UNIT(0x00030000), BLK_UNIT(0x00000000)},
+
+//    PrjCfg_X1.h      Internal Storage Mapping to DxStorage
+//	#define USER_DX_TYPE_EMBMEM_LOADER      DX_TYPE_EMBMEM0 //STRG_OBJ_FW_RSV1
+//	#define USER_DX_TYPE_EMBMEM_MODELEXT    DX_TYPE_EMBMEM1 //STRG_OBJ_FW_RSV2
+//	#define USER_DX_TYPE_EMBMEM_UITRON      DX_TYPE_EMBMEM2 //STRG_OBJ_FW_RSV3
+//	#define USER_DX_TYPE_EMBMEM_UBOOT       DX_TYPE_EMBMEM3 //STRG_OBJ_FW_RSV4
+//	#define USER_DX_TYPE_EMBMEM_LINUX       DX_TYPE_EMBMEM4 //STRG_OBJ_FW_RSV5
+//	#define USER_DX_TYPE_EMBMEM_ECOS        DX_TYPE_EMBMEM4 //STRG_OBJ_FW_RSV5
+//	#define USER_DX_TYPE_EMBMEM_DSP         DX_TYPE_EMBMEM5 //STRG_OBJ_FW_RSV6
+//	#define USER_DX_TYPE_EMBMEM_DSP2        DX_TYPE_EMBMEM6 //STRG_OBJ_FW_RSV7
+//	#define USER_DX_TYPE_EMBMEM_PSTORE      DX_TYPE_EMBMEM7 //STRG_OBJ_PSTORE
+//	#define USER_DX_TYPE_EMBMEM_FAT         DX_TYPE_EMBMEM8 //STRG_OBJ_FAT1
+//debug_msg("protect region beore pstore  Type:0x%08x addr:0x%08x size:0x%08x success\r\n",p->uiDxClassType,p->uiPhyAddr<< 16,p->uiPhySize << 16);
+		if (p->uiDxClassType == (DX_CLASS_STORAGE_EXT | DX_TYPE_EMBMEM7)) 
+		{
+			
+			//protect   LOADER   MODELEXT      UITRON  UBOOT
+			if(E_OK == pStrg->ExtIOCtrl(STRG_EXT_CMD_SPI_INVALID_WRITE_REGION,0x00000000,p->uiPhyAddr << 16))
+			{
+				debug_msg("protect region beore pstore  Type:0x%08x addr:0x%08x size:0x%08x success\r\n",p->uiDxClassType,p->uiPhyAddr << 16,p->uiPhySize << 16);
+			}
+			else
+			{
+				debug_msg("protect region beore pstore   Type:0x%08x addr:0x%08x size:0x%08x fail\r\n",p->uiDxClassType,p->uiPhyAddr << 16,p->uiPhySize << 16);
+			}
+
+			
+			//protect   PSTORE
+			/*
+			if(E_OK == pStrg->ExtIOCtrl(STRG_EXT_CMD_SPI_INVALID_WRITE_REGION,p->uiPhyAddr << 16,p->uiPhySize << 16))
+			{
+				debug_msg("protect pstore Type:0x%08x addr:0x%08x size:0x%08x success\r\n",p->uiDxClassType,p->uiPhyAddr << 16,p->uiPhySize << 16);
+			}
+			else
+			{
+				debug_msg("protect pstore Type:0x%08x addr:0x%08x size:0x%08x fail\r\n",p->uiDxClassType,p->uiPhyAddr << 16,p->uiPhySize << 16);
+			}
+			*/
+		}
 		if (p->uiDxClassType == (DX_CLASS_STORAGE_EXT | DX_TYPE_EMBMEM0)) {
+		//User define SPI-NOR table sample code
+			if(pStrg->ExtIOCtrl(STRG_EXT_CMD_SPI_IDENTIFY_CB, (UINT32)pmc_identifySpi, 0) == E_OK) {
+		        DBG_IND("^GSet user define SPI-NOR table success\r\n");
+		    } else {
+		        DBG_ERR("^RSet user define SPI-NOR table fail\r\n");
+		    }
+
 			pStrg->SetParam(STRG_SET_MEMORY_REGION, g_pInit->buf.Addr, g_pInit->buf.Size);
 			pStrg->SetParam(STRG_SET_PARTITION_SECTORS, p->uiPhyAddr, p->uiPhySize);
 			pStrg->GetParam(STRG_GET_BEST_ACCESS_SIZE, (UINT32)&blksize, 0); //get block size

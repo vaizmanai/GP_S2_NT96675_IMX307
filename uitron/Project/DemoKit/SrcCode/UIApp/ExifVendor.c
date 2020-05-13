@@ -152,9 +152,9 @@ ER ExifCB(EXIF_EVENT event, PMEM_RANGE pBuffer, UINT32 uiRetParamNum, UINT32 *pP
 
 
 //#define EXIF_IMAGE_DESCROPTOIN          "DIGITAL CAMERA "
-#define EXIF_MAKER                      "MAKER NAME "
+#define EXIF_MAKER                      "TDH"
 //#define EXIF_MODEL_NAME                 "GoldenSample650"
-#define EXIF_SOFTWARE                   "Verx.xx"
+#define EXIF_SOFTWARE                   ""
 
 //char gExifModel[] ={'N','T','K','9','6','6','3','0',' ',' ',' ',' ',' ',' ',' ',0};
 

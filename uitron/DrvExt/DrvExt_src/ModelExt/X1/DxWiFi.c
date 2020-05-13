@@ -12,7 +12,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 void DrvWiFi_PowerOn(void)
 {
-	//debug_msg("/*******----wifi power on---******/\r\n");
+	debug_msg("/*******----wifi power on---******/\r\n");
 	gpio_clearPin(GPIO_WIFI_PWR_ON);
 	//SwTimer_DelayMs(10);
 }
@@ -20,6 +20,6 @@ void DrvWiFi_PowerOn(void)
 void DrvWiFi_PowerOff(void)
 {
 	//debug_msg("/*******----wifi power off---******/\r\n");
-     //gpio_setPin(GPIO_WIFI_PWR_ON);
+      //gpio_setPin(GPIO_WIFI_PWR_ON);
 }
 

@@ -464,9 +464,9 @@
 // End string must be '\0', total char must be 31
 #define EXIF_MAKER_NAME                 "DvCam"
 // End string must be '\0', total char must be 31
-#define EXIF_MODEL_NAME                 "96675"
+#define EXIF_MODEL_NAME                 "GP-S2"
 // End string must be '\0', total char must be 31
-#define EXIF_IMAGE_DESCROPTOIN          "NOVATEK CAMERA"
+#define EXIF_IMAGE_DESCROPTOIN          ""
 
 #define EXIF_SOFTWARE_VERSION           FW_VERSION_NUM    // <= 20 char (TagSoftVerLen)
 
